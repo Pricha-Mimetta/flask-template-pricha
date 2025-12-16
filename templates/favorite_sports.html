@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<hr>
+    <h2>กีฬาที่ชื่นชอบ</h2>
+    <ol>
+        <li>
+            {{ sports[0] }}
+        </li>
+        <li>
+            {{ sports[1] }}
+        </li>
+        <li>
+            {{ sports[2] }}
+        </li>
+        <li>
+            {{ sports[3] }}
+        </li>
+    </ol>
+    {% endblock %}
