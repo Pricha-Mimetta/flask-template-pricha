@@ -34,6 +34,11 @@ def favorite_sports():
 @app.route('/movies')
 def movies():
     title = 'Movies Page'
-    movies = ['Avengers: Infinity War ','Avengers: Endgame','Iron Man', 'Iron Man 2','Marvel s the Avengers']
-    return render_template('movies.html',title=title, movies=movies)
+    movies = ['Avengers: Infinity War',
+        'Avengers: Endgame',
+        'Iron Man',
+        'Iron Man 2',
+        'Marvel\'s The Avengers']
+    return render_template('movies.html', title=title, movies=movies)
+
 
