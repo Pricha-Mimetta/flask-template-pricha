@@ -28,12 +28,12 @@ def favorite_foods():
 @app.route('/favorite/sports')
 def favorite_sports():
     title = 'Sport Page'
-    sports = ['บอลเล่','บาส','ฟุตบอล']
+    sports = ['บอลเล่','บาส','ฟุตบอล','ฟุตซอล']
     return render_template('favorite_sports.html',title=title,sports=sports)
 
 @app.route('/movies')
 def movies():
     title = 'Movies Page'
-    sports = ['Avengers: Infinity War ','Avengers: Endgame','Iron Man', 'Iron Man 2','Marvel s the Avengers']
-    return render_template('movies.html',title=title,movies=movies)
+    movies = ['Avengers: Infinity War ','Avengers: Endgame','Iron Man', 'Iron Man 2','Marvel s the Avengers']
+    return render_template('movies.html',title=title, movies=movies)
 
